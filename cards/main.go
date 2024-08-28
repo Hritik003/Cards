@@ -3,7 +3,11 @@ package main
 func main() {
 	cards := newDeck()
 
-	cards.print()
+	hand, remDeck := deal(cards, 5)
+
+	hand.print()
+
+	remDeck.print()
 	// fmt.Println(cards)
 
 }
